@@ -1,0 +1,76 @@
+.infoBox {
+  flex: 1;
+  cursor: pointer;
+  background-color: #323232 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png") !important;
+}
+
+.infoBox:not(:last-child) {
+  margin-right: 15px;
+}
+
+.infoBox__cases {
+  color: red;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox__total {
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  margin-top: 15px !important;
+  letter-spacing: 1px !important;
+}
+
+.infoBox--selected {
+  border-top: 10px solid;
+  border-bottom: 10px solid;
+}
+
+.infoBox--blue {
+  border-color: blue;
+}
+
+.infoBox--green {
+  border-color: #7dd71d;
+}
+
+.infoBox--red {
+  border-color: red;
+}
+
+.infoBox--cases--green {
+  color: #7dd71d !important;
+}
+
+.infoBox--cases--blue {
+  color: blue !important;
+}
+
+.infoBox--cases--red {
+  color: red !important;
+}
+
+.infoBox__title {
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 1.3rem !important;
+}
+
+@media (max-width: 990px) {
+  .infoBox .MuiCardContent-root {
+    padding: 10px !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .infoBox__title {
+    font-size: 1.1rem !important;
+  }
+  .infoBox__cases {
+    font-size: 1.5rem;
+  }
+}

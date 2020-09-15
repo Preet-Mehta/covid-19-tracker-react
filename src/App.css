@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/bo-play.png");
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 20px 20px;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__header > h1 {
+  color: #cf1b1b;
+  font-size: 2rem;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__dropdown .MuiInputBase-root {
+  color: white !important;
+  background-color: #323232 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png") !important;
+  border-radius: 4px;
+}
+
+.app__right {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: #000000 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/bo-play.png") !important;
+}
+
+.app__table {
+  background-color: #323232 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png") !important;
+  color: white !important;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.app__right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app__graph {
+  flex-grow: 1;
+  background-color: white;
+}
+
+.app__graphTitle {
+  margin-bottom: 10px;
+}
+
+.blink {
+  animation: blink 1s linear infinite;
+  color: red;
+  border: 1px solid red;
+  margin-right: 5px;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  .app__right {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
